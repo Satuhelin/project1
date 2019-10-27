@@ -79,14 +79,14 @@ function ready(datapoints) {
 
     .call(yAxis)
 
-  const xAxis = d3.axisBottom(xPositionScale).ticks(7)
-  svg
-    .append('g')
-    .attr('class', 'axis x-axis')
-    .attr('transform', 'translate(0,' + height + ')')
-    .call(xAxis)
-}
+  d3.selectAll('.yAxis>.tick>text').each(function(d, i) {
+    d3.select(this).style('font-size', 30)
 
-d3.selectAll('.yAxis>.tick>text').each(function(d, i) {
-  d3.select(this).text('font-size', 30)
-})
+    const xAxis = d3.axisBottom(xPositionScale).ticks(7)
+    svg
+      .append('g')
+      .attr('class', 'axis x-axis')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(xAxis)
+  })
+}
