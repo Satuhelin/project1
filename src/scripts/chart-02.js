@@ -76,6 +76,7 @@ function ready(datapoints) {
   svg
     .append('g')
     .attr('class', 'axis y-axis')
+    .style('font-size', 20)
 
     .call(yAxis)
 

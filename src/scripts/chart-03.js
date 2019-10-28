@@ -6,7 +6,7 @@ import d3Annotation from 'd3-svg-annotation'
 
 d3.tip = d3Tip
 
-const margin = { top: 50, left: 170, right: 50, bottom: 50 }
+const margin = { top: 50, left: 170, right: 10, bottom: 50 }
 const height = 400 - margin.top - margin.bottom
 const width = 700 - margin.left - margin.right
 
@@ -34,7 +34,7 @@ const yPositionScale = d3
     'Russia',
     'United Kingdom',
     'Canada',
-    'Korea, Republic of',
+    'South Korea',
     'Vatican City'
   ])
   .range([0, height])
@@ -76,17 +76,14 @@ function ready(datapoints) {
   svg
     .append('g')
     .attr('class', 'axis y-axis')
+    .style('font-size', 20)
 
     .call(yAxis)
 
-  d3.selectAll('.yAxis>.tick>text').each(function(d, i) {
-    d3.select(this).style('font-size', 30)
-
-    const xAxis = d3.axisBottom(xPositionScale).ticks(7)
-    svg
-      .append('g')
-      .attr('class', 'axis x-axis')
-      .attr('transform', 'translate(0,' + height + ')')
-      .call(xAxis)
-  })
+  const xAxis = d3.axisBottom(xPositionScale).ticks(7)
+  svg
+    .append('g')
+    .attr('class', 'axis x-axis')
+    .attr('transform', 'translate(0,' + height + ')')
+    .call(xAxis)
 }
