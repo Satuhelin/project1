@@ -56,10 +56,11 @@ function ready(datapoints) {
   console.log('Data read in:', datapoints)
 
   svg
-    .selectAll('rect')
+    .selectAll('.president-rect')
     .data(datapoints)
     .enter()
     .append('rect')
+    .attr('class', 'president-rect')
     .attr('fill', 'grey')
     .attr('stroke', 'black')
     .attr('height', 20)

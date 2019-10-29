@@ -90,9 +90,9 @@ function ready(datapoints) {
       const className = d.key
 
       svg
-      // .selectAll('text.' + className)
-      // .attr('font-size', 25)
-      // .raise()
+        .selectAll('text.' + className)
+        .attr('font-size', 25)
+        .raise()
     })
     .on('mouseout', d => {
       const className = d.key
@@ -122,8 +122,8 @@ function ready(datapoints) {
 
         .selectAll('path.' + className)
         .attr('stroke-width', 8)
-        // .selectAll('text.' + className)
-        // .attr('font-size', 25)
+        .selectAll('text.' + className)
+        .attr('font-size', 25)
         .raise()
     })
     .on('mouseout', d => {

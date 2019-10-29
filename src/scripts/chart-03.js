@@ -60,6 +60,7 @@ function ready(datapoints) {
     .data(datapoints)
     .enter()
     .append('rect')
+    .attr('class', 'president-rect2')
     .attr('fill', 'blue')
     .attr('stroke', 'none')
     .attr('height', 20)

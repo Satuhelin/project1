@@ -169,14 +169,17 @@ p.chart-label {
 }
 
 
-
 p.chart-source {
     font-size:0.85rem;
     margin:0;
 }
 
-
-
+.president-rect:hover {
+    fill:#FDD1BE;
+}
+.president-rect2:hover {
+    fill:#99d8c9;
+}
 
 
 /* photos */
