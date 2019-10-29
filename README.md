@@ -1,8 +1,8 @@
-This project presents the presidential visits by superpower presidents. 
+This project presents the presidential visits by superpower presidents from 2001 to 2019. (In China case from 2003) 
 
 DATA
 
-The data used is scraped in October 2019 from Kremlin.ru (Russian presidents trips), chinavitae.com (Chinese presidents trips) and state department Office of the Historian (US presidents trips).
+The data used is scraped in October 2019 from Kremlin.ru http://en.kremlin.ru/events/president/trips (Russian presidents trips), http://chinavitae.com/vip/ (Chinese presidents trips) and state department Office of the Historian https://history.state.gov/departmenthistory/travels/president (US presidents trips).
 
 ANALYSIS
 
