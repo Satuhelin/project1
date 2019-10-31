@@ -1,6 +1,7 @@
 body {
     margin:auto;
     padding:50px 10px;
+    padding-top: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,6 +25,9 @@ img {
 .light-theme {
     background-color: white;
     color: black;
+}
+.d3-tip{
+    background-color: white;
 }
 
 .header {
@@ -85,6 +89,12 @@ h2.subhead {
     margin-bottom:0;
     margin-top: 15px;
     font-weight: 400;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 p.body-text {
